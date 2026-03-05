@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOVIES STALL</title>
+  <script src="https://kit.fontawesome.com/40331f93ba.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="./js/explore.js" defer></script>
+</head>
+
+<body>
+  <section id="landing__explore--page">
+    <nav>
+      <div class="nav__container row">
+        <div class="nav__logo">
+          <img src="./img/LOGO4.0.png" class="nav__logo--img" alt="Website logo" />
+        </div>
+
+        <ul class="nav__links">
+          <li><a href="#landing__explore--page" class="nav__link home">HOME</a></li>
+          <li><a href="#movies__main" class="nav__link trending">MOVIES</a></li>
+          <li><a href="#" class="nav__link new">SERIES</a></li>
+          <li><a href="#" class="nav__link login">LOGIN</a></li>
+          <li> <a href="#" class="nav__link signup nav__link--primary">SIGN UP</a> </li>
+        </ul>
+
+        <!-- Hamburger Menu section -->
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#landing__explore--page" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#movies__main" class="menu__link" onclick="closeMenu()">Movies</a>
+            </li>
+            <li class="menu__list">
+              <a href="#movies__main" class="menu__link" onclick="closeMenu()">Series</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End -->
+
+      </div>
+    </nav>
+  </section>
+
+  <main>
+
+
+
+    <section id="movies__main">
+      <div class="top-search">
+        <select>
+          <option value="disabledselected">Sort Option</option>
+          <option value="NEWEST_TO_OLDEST">Newest to Oldest</option>
+          <option value="OLDEST_TO_NEWEST">Oldest to Newest</option>
+        </select>
+        <input type="text" id="movieTitleInput"
+          placeholder="Frontend Simplified Search for movies, TV shows, actors, genres, etc...">
+        <button onclick="getMovie()"> <i class="fa-solid fa-magnifying-glass search__icon"> </i> </button>
+      </div>
+
+
+
+      <div class="movies__container">
+        <div class="row movies__row">
+          <div class="movie__grid">
+
+            <div class="item__1" id="trending-movies"> <!-- child 1 -->
+              <figure class="movie__img--wrapper">
+                <img class="movie__img poster"
+                  src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_SX300.jpg"
+                  alt="Avengers: Endgame">
+              </figure>
+            </div>
+
+            <div class="item__2"> <!-- child 2 -->
+              <div class="movie__title">
+                <span class="orange">Title:</span> Guardians of the Galaxy Vol. 2
+              </div>
+              <div class="rated">
+                <span class="orange">Rated:</span> PG-13
+              </div>
+              <div class="released">
+                <span class="orange">Released:</span> 05 May 2017
+              </div>
+              <div class="genre">
+                <span class="orange">Genre:</span> Action, Adventure, Comedy
+              </div>
+              <div class="box__office"> <span class="orange">BoxOffice:</span> $389,813,101
+              </div>
+
+
+              <div class="imdb__rating"> <span class="orange">IMDB Rating:</span> 7.6/10
+              </div>
+
+              <div class="movie__rating">
+                <span class="orange">Scored:</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+
+            </div>
+
+            <div class="item__3"> <!-- child 3 -->
+
+              <div class="writer">
+                <span class="orange">Writer:</span> James Gunn, Dan Abnett, Andy Lanning
+              </div>
+              <div class="plot">
+                <span class="orange">Plot:</span>
+                "The Guardians struggle to keep together as a
+                team while dealing with their personal family issues, notably Star-Lord's
+                encounter with his father, the ambitious celestial being Ego".
+              </div>
+              <div class="actors">
+                <span class="orange">Actors:</span> Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__container">
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo--img">
+            <img src="./img/LOGO4.0.png" class="footer__logo--img" alt="Pious Godfearing offical logo" />
+          </figure>
+          <span class="footer__logo--popper">
+            Top <i class="fas fa-arrow-up"></i></span>
+        </a>
+        <div class="footer__social--list">
+          <a href="https://github.com/PIOUSGODFEARING" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">GitHub</a>
+          <a href="https://www.linkedin.com/in/pious-godfearing/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">LinkedIn</a>
+          <a href="https://frontendsimplified.com/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">FES Academy</a>
+          <a href="https://piousgodfearing.github.io/Advance-E-portfolio/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white" download>E-Portfolio</a>
+        </div>
+        <div class="footer__copyright">
+          Copyright &#169; 2026 Pious Godfearing
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
