@@ -30,7 +30,7 @@ function showLoading() {
 
     movieGrid.innerHTML = `
         <div class="loading-spinner">
-            <img src="/img/DoubleRing.svg" alt="Loading...">
+            <img src="./img/DoubleRing.svg" alt="Loading...">
         </div>
     `;
 }
