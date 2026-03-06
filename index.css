@@ -59,7 +59,7 @@ button {
     position: relative;
     background-color: black;
     padding: 100px 0;
-    background-image: url('/img/avengers.jpg');
+    background-image: url('./img/avengers.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10% 40%;
@@ -76,7 +76,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/nav 13.jpg');
+    background-image: url('./img/nav\ 13.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 10% 40%;
@@ -184,7 +184,7 @@ li:not(:nth-last-child(-n+2)) a.nav__link:hover:after {
 
 .menu__backdrop {
     position: absolute;
-    background-image: url('/img/extra.jpg');
+    background-image: url('./img/extra.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
@@ -369,7 +369,7 @@ li:not(:nth-last-child(-n+2)) a.nav__link:hover:after {
 
 .item__1 {
     padding: 100px;
-    background-image: url('/img/cover_1-removebg-preview.png');
+    background-image: url('./img/DVD\ Case\ cover.png');
     background-size: 100%;
     background-position: 5px center;
     margin-top: -40px;
@@ -521,7 +521,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/FES Academy 1.png');
+    background-image: url('./img/FES Academy 1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0% 10%;
@@ -537,7 +537,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/img/FES\ Academy\ 2.png');
+    background-image: url('./img/FES\ Academy\ 2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% 80%;
@@ -819,7 +819,7 @@ a.footer__social--link:hover {
     .menu__backdrop {
         background-image: none;
         background-color: #000;
-        background-image: url('/img/flower\ body\ backup\ 1.png');
+        background-image: url('./img/flower\ body\ backup\ 1.png');
     }
 }
 
